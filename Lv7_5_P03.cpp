@@ -21,8 +21,19 @@ int iscap(char x){
 
 int main(){
     input();
-    cout << iscap(a);
-    cout << iscap(b);
+    int capCount = iscap(a) + iscap(b);
+    if(capCount == 2){
+        cout << "대문자들";
+    }
+    else if(capCount == 1){
+        cout << "대소문자";
+    }
+    else{
+        for (int i = 0; i < 26; i++){
+            printf("%c", 'a' + i);
+        }
+
+    }
 
 
 
