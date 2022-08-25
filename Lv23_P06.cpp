@@ -21,7 +21,7 @@ void showpath(){
 void rcsv(int lev){
     if(lev == 4){
         cnt++;
-        showpath();
+//      showpath();
         return;
     }
     for(int i = 0; i < 5; i++){
